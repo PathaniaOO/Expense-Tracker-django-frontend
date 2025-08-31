@@ -1,12 +1,56 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## 🔹 2. Frontend README (`PathaniaOO/Expense-Tracker-django-frontend`)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```markdown
+# 💰 Expense Tracker Frontend (React + Vite)
 
-## Expanding the ESLint configuration
+A **React (Vite)** frontend for the Expense Tracker project.  
+Connects to the Django REST API backend for authentication, expenses, incomes, and reports.  
+Deployed on **Vercel**.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Live Demo
+- Frontend: [https://expense-tracker-django-frontend.vercel.app](https://expense-tracker-django-frontend.vercel.app)
+- Backend API: [https://expense-tracker-django-ig0o.onrender.com/api/docs/](https://expense-tracker-django-ig0o.onrender.com/api/docs/)
+
+---
+
+## 🔧 Tech Stack
+- **Frontend:** React + Vite
+- **State Management:** React hooks + Context
+- **HTTP:** Axios (with JWT interceptors for refresh)
+- **Deployment:** Vercel
+
+---
+
+## ✨ Features
+- 🔐 Login & signup (JWT auth)
+- 💳 Manage accounts
+- 💵 Track income & expenses
+- 📊 View summaries and reports
+- 🌐 API integration with Django backend
+
+---
+
+## ⚙️ Setup Locally
+
+```bash
+# Clone repo
+git clone https://github.com/PathaniaOO/Expense-Tracker-django-frontend.git
+cd Expense-Tracker-django-frontend
+
+# Install dependencies
+npm install
+
+# Setup environment
+cp .env.example .env
+
+# Start dev server
+npm run dev
+
+VITE_API_URL=http://localhost:8000/api/   # local backend
+# In production (Vercel):
+VITE_API_URL=https://expense-tracker-django-ig0o.onrender.com/api/
