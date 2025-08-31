@@ -1,7 +1,7 @@
 
 ---
 
-## 🔹 2. Frontend README (`PathaniaOO/Expense-Tracker-django-frontend`)
+## 🔹Frontend README (`PathaniaOO/Expense-Tracker-django-frontend`
 
 ```markdown
 # 💰 Expense Tracker Frontend (React + Vite)
